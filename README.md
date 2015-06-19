@@ -1,2 +1,2 @@
 # deep-think-code
-My First Repository, where i'll put demos and my stuffs
+My First Repository, where i'll some impulse code.
