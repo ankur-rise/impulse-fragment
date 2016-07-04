@@ -40,11 +40,8 @@ public class FrgamentA extends Fragment implements View.OnClickListener{
 
     @Override
     public void onSaveInstanceState(Bundle outState) {
-
         outState.putInt("counter", counter);
-
         super.onSaveInstanceState(outState);
-
     }
 
     @Override
@@ -58,6 +55,7 @@ public class FrgamentA extends Fragment implements View.OnClickListener{
             case R.id.btn:
                 counter++;
                 tv.setText(counter+"");
+                ((TextView)getView().findViewById(R.id.tv_two)).setText(counter+" second");
                 break;
 
         }
