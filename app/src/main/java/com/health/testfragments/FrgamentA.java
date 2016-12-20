@@ -12,6 +12,7 @@ import android.widget.TextView;
  * Created by ankur on 19/6/15.
  */
 public class FrgamentA extends Fragment implements View.OnClickListener{
+    private static final String BUNDLE_KEY =  "counter";
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,7 +25,7 @@ public class FrgamentA extends Fragment implements View.OnClickListener{
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
         if(savedInstanceState!=null) {
-            counter = savedInstanceState.getInt("counter");
+            counter = savedInstanceState.getInt(BUNDLE_KEY);
         }
         View view = inflater.inflate(R.layout.fragment_a, null);
         tv = (TextView) view.findViewById(R.id.tv);
@@ -40,7 +41,7 @@ public class FrgamentA extends Fragment implements View.OnClickListener{
 
     @Override
     public void onSaveInstanceState(Bundle outState) {
-        outState.putInt("counter", counter);
+        outState.putInt(BUNDLE_KEY, counter);
         super.onSaveInstanceState(outState);
     }
 
