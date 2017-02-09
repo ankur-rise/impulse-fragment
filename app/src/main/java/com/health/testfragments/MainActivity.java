@@ -17,7 +17,7 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         Log.i("MainActivity", "onCreate");
         if(savedInstanceState!=null){
-            Log.i("MainActivity", "something in bundle HELLO WORLD Ankur Chadu");
+            Log.i("MainActivity", "something in bundle HELLO WORLD Ankur u");
         }
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
