@@ -11,7 +11,7 @@ import static org.junit.Assert.assertEquals;
 public class TestUtil {
 @Test
 public void testCalculator(){
- assertEquals(Utilty.sum(2,3), 5);
+ assertEquals(Utilty.sum(2,3), 7);
 }
 
 }
