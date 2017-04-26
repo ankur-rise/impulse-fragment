@@ -12,6 +12,7 @@ import android.widget.TextView;
  * Created by ankur on 19/6/15.
  */
 public class FrgamentA extends Fragment implements View.OnClickListener{
+    // Int-1-test-local-remote
     private static final String BUNDLE_KEY =  "counter";
     @Override
     public void onCreate(Bundle savedInstanceState) {
